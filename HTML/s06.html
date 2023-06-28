@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 제목을 작성할때 h시리즈를 사용한다 -->
+    <h1>다람쥐 헌 쳇바퀴에 타고파</h1>
+    <h2>다람쥐 헌 쳇바퀴에 타고파</h2>
+    <h3>다람쥐 헌 쳇바퀴에 타고파</h3>
+    <h4>다람쥐 헌 쳇바퀴에 타고파</h4>
+    <h5>다람쥐 헌 쳇바퀴에 타고파</h5>
+    <h6>다람쥐 헌 쳇바퀴에 타고파</h6>
+
+    <!-- hr은 단일태그이다 -->
+    <hr />
+
+    <!-- p는 블록태그이다 -->
+    <p>안녕하세요. 제이본 입니다.</p>
+    <p>안녕하세요. 제이본 입니다.</p>
+
+    <hr />
+
+    <!-- 띄워 쓰기를 개발쪽에선 개행이라한다 -->
+    <!-- br은 줄바꿈 할때 사용한다 -->
+    안녕<br />하세요.
+
+    <hr />
+
+    <!-- 문단안에 문장을 짚어넣을순없다 -->
+    <div>
+      <p>dd</p>
+    </div>
+
+    <hr />
+
+    <!-- span태그는 문장 안의 내용에 스타일을 주거나 기능을 줄 때 사용한다 -->
+    <p>
+      안녕하세요. <span style="background-color: yellow">제이본</span> 입니다.
+    </p>
+
+    <hr />
+
+    <!-- details 안에는 summary 라는게 꼭들어가야하고 details는 내용을 숨겼다보여준다 -->
+    <details>
+      <summary>설레이는 이 마음은 뭘까</summary>
+      <p>왠지 잠을 이룰수가 없어</p>
+    </details>
+
+    <hr />
+
+    <!-- ul은 점으로 찍히는 목차이다 -->
+    <ul>
+      <li>사과</li>
+      <li>바나나</li>
+      <li>파인애플</li>
+    </ul>
+
+    <hr />
+
+    <!-- ol은 순서가 있는 목차이다 -->
+    <ol>
+      <li>베인</li>
+      <li>그라가스</li>
+      <li>카직스</li>
+    </ol>
+
+    <hr />
+
+    <!-- a blank 는 눌렀을때 새창이열리면서 이동한다(타겟을 _blank로 바꾸어줬을떄) -->
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer"
+      >구글로이동</a
+    >
+
+    <hr />
+
+    <!-- 대표적인 inline-block 태그 src는 이미지를 불러오기위해 
+        alt는 이미지가 깨졌을때 무슨이미지인지 설명하기 위해 -->
+    <img src="https://zrr.kr/N9WI" alt="우주 오리" width="400" />
+
+    <hr />
+
+    <!-- strong태그는 글자를 굵게해준다 -->
+    <p>이 기차 번호는 <strong>999</strong> 입니다.</p>
+
+    <hr />
+
+    <h1>텍스트 입력</h1>
+    <input type="text" />
+    <h1>비밀번호 입력</h1>
+    <input type="password" />
+    <h1>체크박스</h1>
+    <label>
+      <input type="checkbox" />
+      밥먹기
+    </label>
+    <!-- 인풋 박스는 똑같은 박스라는 기준이
+         name이라서 이름을같게 설정을해주면 하나밖에 못고르게바뀜 -->
+    <h1>라디오 버튼</h1>
+    <label>
+      <!-- name 설정 뒤에 checked를 넣으면 기본적으로 선택이되고 disabled를 넣으면 -->
+      <!-- 체크를못하게됨 -->
+      <input type="radio" name="ok" checked />
+      예
+    </label>
+    <label>
+      <input type="radio" name="ok" />
+      아니오
+    </label>
+    <label>
+      <input type="radio" name="ok" disabled />
+      몰라요
+    </label>
+    <h1>이메일 입력</h1>
+    <input type="email" name="id" />
+    <h1>날짜 입력</h1>
+    <input type="date" name="date" />
+    <h1>파일 입력</h1>
+    <input type="file" name="id" />
+    <h1>범위 입력</h1>
+    <input type="range" name="id" />
+    <h1>색상 입력</h1>
+    <input type="color" />
+
+    <hr />
+
+    <fieldset>
+      <legend>로그인</legend>
+      <p>
+        <label for="userid">아이디</label>
+        <input type="text" id="userid" />
+      </p>
+      <p>
+        <label for="passwd">비밀번호</label>
+        <input type="password" id="passwd" />
+      </p>
+    </fieldset>
+    <hr />
+
+    <textarea cols="30" rows="10"></textarea>
+
+    <hr />
+
+    <button type="button">눌러주세요</button>
+
+    <hr />
+
+    <iframe width="560" height="315" src="https://wikidocs.net"></iframe>
+    <!-- 위키독스라는 사이트에서 iframe을 열어뒀기때문에 가능 -->
+
+    <hr />
+
+    <audio src="https://zrr.kr/5Xik" controls></audio>
+
+    <video src="https://zrr.kr/Mghf" controls width="400"></video>
+
+    <table border>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+      </tr>
+    </table>
+
+    <header>헤더</header>
+    <nav>네비게이션</nav>
+    <section>섹션</section>
+    <article>글</article>
+    <aside>사이드</aside>
+    <footer>푸터</footer>
+  </body>
+</html>
